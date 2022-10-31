@@ -1,0 +1,103 @@
+/* common styles */
+:root {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Raleway', sans-serif ;
+}
+
+/* layout */
+.container {
+    width: 1360px;
+    margin: 30 px auto;
+}
+
+.row {
+    display: flex;
+}
+
+.disp {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    padding-left: 3em;
+    margin-bottom: 7em;
+}
+
+.disp li {
+    list-style-type: none;
+}
+
+.disp li:before {
+   
+    content: '\2713';
+    display: inline-block;
+    color: black;
+    margin: 0 6px 0 0;
+}
+
+.col-50 {
+    width: 50%;
+    box-sizing: border-box ;
+}
+
+.col-50:first-child {
+    padding-right: 3em;
+}
+
+.label--top {
+    position: absolute;
+    transform: translateY(-11rem);
+}
+
+/* typography */
+p, ul {
+    font-weight: 300;
+    line-height: 1.7rem;
+
+}
+
+li {
+    margin-bottom: .7em;
+}
+.title-1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin: 1em 0 0 0;
+}
+
+.title-2 {
+    font-weight: 100;
+    font-size: 2.7rem;
+    margin: 0 0 .9em 0;
+}
+
+.label {
+    font-size: 0.7rem;
+    margin: 0;
+}
+
+/* colors and effects */
+.label--primary {
+    color: #557ef8;
+}
+
+.label--dashed::before {
+    display: inline-block;
+    content: "___";
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-right: .5em;
+    transform: translateY(-.35em);
+}
+
+/* opt */
+
+/* .title-serv {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin: 1em 0 0 0;
+   
+} */
